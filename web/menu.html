@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Menú Dulce Momento — tortas, cupcakes, postres y bebidas." />
+    <title>Menú — Dulce Momento</title>
+    <link rel="icon" href="assets/"logo.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body class="sparkle-bg">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Dulce Momento inicio">
+        <img src="assets/"logo.png" alt="Dulce Momento" />
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a href="index.html">Inicio</a>
+        <a class="active" href="menu.html">Menú</a>
+        <a href="sobre-nosotros.html">Sobre nosotros</a>
+        <a href="contacto.html">Contáctanos</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn-primary" href="contacto.html">Pedir ahora</a>
+        <button class="btn btn-cart" type="button" data-cart-btn aria-label="Carrito">
+          🛒
+          <span class="cart-badge" data-cart-count hidden>0</span>
+        </button>
+        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Abrir menú">
+          ☰
+        </button>
+      </div>
+    </header>
+
+    <div class="mobile-nav" data-mobile-nav>
+      <div class="mobile-nav-panel">
+        <a href="index.html">Inicio</a>
+        <a class="active" href="menu.html">Menú</a>
+        <a href="sobre-nosotros.html">Sobre nosotros</a>
+        <a href="contacto.html">Contáctanos</a>
+      </div>
+    </div>
+
+    <main>
+      <section class="page-hero page-hero-compact">
+        <h1 class="reveal">Nuestro menú</h1>
+        <p class="reveal reveal-d1">Dulces para cada antojo ♡</p>
+      </section>
+
+      <section class="section section-pink section-tight">
+        <div class="filters" role="tablist" aria-label="Filtrar menú">
+          <button class="filter-btn active" type="button" data-filter="all">Todos</button>
+          <button class="filter-btn" type="button" data-filter="tortas">Tortas</button>
+          <button class="filter-btn" type="button" data-filter="cupcakes">Cupcakes</button>
+          <button class="filter-btn" type="button" data-filter="postres">Postres</button>
+          <button class="filter-btn" type="button" data-filter="bebidas">Bebidas</button>
+        </div>
+
+        <div class="menu-grid">
+          <article class="product" data-category="tortas">
+            <div class="product-media">
+              <img src="assets/"product-cake-real.png" alt="Rose Cake" />
+            </div>
+            <div class="product-body">
+              <h3>Rose Cake</h3>
+              <p style="margin: 0; color: var(--muted); font-size: 0.92rem">Torta de capas con rosa</p>
+              <div class="price-row">
+                <span class="price">$28.00</span>
+                <button class="btn btn-soft" type="button" data-add-cart data-id="rose-cake" data-name="Rose Cake" data-price="28">Añadir</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product" data-category="tortas">
+            <div class="product-media">
+              <img src="assets/"product-cake-real.png" alt="Berry Dream" style="object-position: 30% center" />
+            </div>
+            <div class="product-body">
+              <h3>Berry Dream</h3>
+              <p style="margin: 0; color: var(--muted); font-size: 0.92rem">Frutos rojos y crema</p>
+              <div class="price-row">
+                <span class="price">$32.00</span>
+                <button class="btn btn-soft" type="button" data-add-cart data-id="berry-dream" data-name="Berry Dream" data-price="32">Añadir</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product" data-category="cupcakes">
+            <div class="product-media">
+              <img src="assets/"product-cupcakes-real.png" alt="Cupcake Party" />
+            </div>
+            <div class="product-body">
+              <h3>Cupcake Party</h3>
+              <p style="margin: 0; color: var(--muted); font-size: 0.92rem">Frosting rosa y sprinkles</p>
+              <div class="price-row">
+                <span class="price">$4.50</span>
+                <button class="btn btn-soft" type="button" data-add-cart data-id="cupcake-party" data-name="Cupcake Party" data-price="4.5">Añadir</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product" data-category="cupcakes">
+            <div class="product-media">
+              <img src="assets/"product-cupcakes-real.png" alt="Mini Box x6" style="object-position: right center" />
+            </div>
+            <div class="product-body">
+              <h3>Mini Box x6</h3>
+              <p style="margin: 0; color: var(--muted); font-size: 0.92rem">Caja surtida para compartir</p>
+              <div class="price-row">
+                <span class="price">$24.00</span>
+                <button class="btn btn-soft" type="button" data-add-cart data-id="mini-box" data-name="Mini Box x6" data-price="24">Añadir</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product" data-category="postres">
+            <div class="product-media">
+              <img src="assets/"product-desserts-real.png" alt="Combo Dulce" />
+            </div>
+            <div class="product-body">
+              <h3>Combo Dulce</h3>
+              <p style="margin: 0; color: var(--muted); font-size: 0.92rem">Macarons + brownie + más</p>
+              <div class="price-row">
+                <span class="price">$16.00</span>
+                <button class="btn btn-soft" type="button" data-add-cart data-id="combo-dulce" data-name="Combo Dulce" data-price="16">Añadir</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product" data-category="postres">
+            <div class="product-media">
+              <img src="assets/"product-desserts-real.png" alt="Macaron Mix" style="object-position: left center" />
+            </div>
+            <div class="product-body">
+              <h3>Macaron Mix</h3>
+              <p style="margin: 0; color: var(--muted); font-size: 0.92rem">Selección de 8 unidades</p>
+              <div class="price-row">
+                <span class="price">$18.00</span>
+                <button class="btn btn-soft" type="button" data-add-cart data-id="macaron-mix" data-name="Macaron Mix" data-price="18">Añadir</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product" data-category="bebidas">
+            <div class="product-media">
+              <img src="assets/"product-latte-real.png" alt="Latte Corazón" />
+            </div>
+            <div class="product-body">
+              <h3>Latte Corazón</h3>
+              <p style="margin: 0; color: var(--muted); font-size: 0.92rem">Espuma con arte</p>
+              <div class="price-row">
+                <span class="price">$5.00</span>
+                <button class="btn btn-soft" type="button" data-add-cart data-id="latte-corazon" data-name="Latte Corazón" data-price="5">Añadir</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product" data-category="bebidas">
+            <div class="product-media">
+              <img src="assets/"product-latte-real.png" alt="Chocolate Caliente" style="object-position: center 70%" />
+            </div>
+            <div class="product-body">
+              <h3>Chocolate Caliente</h3>
+              <p style="margin: 0; color: var(--muted); font-size: 0.92rem">Cacao y crema suave</p>
+              <div class="price-row">
+                <span class="price">$4.50</span>
+                <button class="btn btn-soft" type="button" data-add-cart data-id="chocolate" data-name="Chocolate Caliente" data-price="4.5">Añadir</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem">
+          <a class="btn btn-primary" href="contacto.html">Cotizar pedido especial</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer footer-tight">
+      <div class="footer-grid">
+        <div>
+          <h3>Dulce Momento</h3>
+          <p>momentos memorables con dulzura</p>
+        </div>
+        <div>
+          <h4>Explorar</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="menu.html">Menú</a></li>
+            <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+            <li><a href="contacto.html">Contáctanos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Síguenos</h4>
+          <div class="socials">
+            <a href="#">IG</a>
+            <a href="#">FB</a>
+            <a href="#">WA</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© Dulce Momento</span>
+        <span>Menú</span>
+      </div>
+    </footer>
+
+    <script type="module">
+      import { boot } from "/src/main.js";
+      boot();
+
+      const params = new URLSearchParams(location.search);
+      const cat = params.get("cat");
+      if (cat) {
+        const btn = document.querySelector(`[data-filter="${cat}"]`);
+        if (btn) btn.click();
+      }
+    </script>
+  </body>
+</html>

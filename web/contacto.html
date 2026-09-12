@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Contáctanos para pedidos especiales y cotizaciones Dulce Momento." />
+    <title>Contáctanos — Dulce Momento</title>
+    <link rel="icon" href="assets/"logo.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body class="sparkle-bg">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Dulce Momento inicio">
+        <img src="assets/"logo.png" alt="Dulce Momento" />
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a href="index.html">Inicio</a>
+        <a href="menu.html"">Menú</a>
+        <a href="sobre-nosotros.html">Sobre nosotros</a>
+        <a class="active" href="contacto.html">Contáctanos</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn-primary" href="contacto.html">Pedir ahora</a>
+        <button class="btn btn-cart" type="button" data-cart-btn aria-label="Carrito">
+          🛒
+          <span class="cart-badge" data-cart-count hidden>0</span>
+        </button>
+        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Abrir menú">
+          ☰
+        </button>
+      </div>
+    </header>
+
+    <div class="mobile-nav" data-mobile-nav>
+      <div class="mobile-nav-panel">
+        <a href="index.html">Inicio</a>
+        <a href="menu.html"">Menú</a>
+        <a href="sobre-nosotros.html">Sobre nosotros</a>
+        <a class="active" href="contacto.html">Contáctanos</a>
+      </div>
+    </div>
+
+    <main>
+      <section class="page-hero page-hero-compact">
+        <h1 class="reveal">Contáctanos</h1>
+        <p class="reveal reveal-d1">Cuéntanos tu dulce idea ♡</p>
+      </section>
+
+      <svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0,30 C240,70 480,0 720,30 C960,60 1200,10 1440,40 L1440,70 L0,70 Z"></path>
+      </svg>
+
+      <section class="section section-pink section-tight">
+        <div class="contact-grid">
+          <aside class="info-stack reveal">
+            <div>
+              <h2 style="font-family: var(--font-display); color: var(--burgundy); margin: 0 0 0.8rem">
+                Datos de contacto
+              </h2>
+              <p style="color: var(--muted); margin: 0 0 1rem">
+                Pedidos especiales, cotizaciones de tortas y reservas para eventos.
+              </p>
+            </div>
+            <div class="info-card">
+              <strong>📍 Dirección</strong>
+              Calle Ejemplo 123, Ciudad
+            </div>
+            <div class="info-card">
+              <strong>✉ Email</strong>
+              <a href="mailto:hola@dulcemomento.com">hola@dulcemomento.com</a>
+            </div>
+            <div class="info-card">
+              <strong>☎ Teléfono</strong>
+              <a href="tel:+000000000000">+00 000 000 0000</a>
+            </div>
+            <div class="info-card">
+              <strong>🕒 Horario</strong>
+              Lun–Sáb · 8:00–20:00
+            </div>
+            <div class="socials" aria-label="Redes">
+              <a href="#" aria-label="Instagram">IG</a>
+              <a href="#" aria-label="Facebook">FB</a>
+              <a href="#" aria-label="WhatsApp">WA</a>
+            </div>
+            <img
+              src="assets/"mascot-chef-anime.png"
+              alt=""
+              style="width: 160px; margin: 0.5rem auto 0; border-radius: 50%"
+            />
+          </aside>
+
+          <form class="form-panel reveal reveal-d2" data-contact-form>
+            <h2>Envíanos un mensaje</h2>
+            <div class="form-success" data-form-success>
+              ¡Gracias! Te responderemos pronto con mucha dulzura.
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required />
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="tu@email.com" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <label for="tel">Teléfono</label>
+                <input id="tel" name="tel" type="tel" placeholder="+00 ..." />
+              </div>
+              <div class="field">
+                <label for="asunto">Asunto</label>
+                <input id="asunto" name="asunto" type="text" placeholder="Torta de cumpleaños" />
+              </div>
+            </div>
+            <div class="field">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos qué necesitas..." required></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Enviar con amor ✦</button>
+          </form>
+        </div>
+
+        <div class="map-block" role="img" aria-label="Mapa de ubicación">
+          <div style="text-align: center">
+            <div class="map-pin" style="margin: 0 auto 0.8rem"></div>
+            Mapa · Dulce Momento
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer footer-tight">
+      <div class="footer-grid">
+        <div>
+          <h3>Dulce Momento</h3>
+          <p>momentos memorables con dulzura</p>
+        </div>
+        <div>
+          <h4>Explorar</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="menu.html"">Menú</a></li>
+            <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+            <li><a href="contacto.html">Contáctanos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Síguenos</h4>
+          <div class="socials">
+            <a href="#">IG</a>
+            <a href="#">FB</a>
+            <a href="#">WA</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© Dulce Momento</span>
+        <span>Contáctanos</span>
+      </div>
+    </footer>
+
+    <script type="module">
+      import { boot } from "/src/main.js";
+      boot();
+    </script>
+  </body>
+</html>

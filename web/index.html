@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Dulce Momento — pastelería boutique. Tortas, cupcakes y café para momentos memorables con dulzura."
+    />
+    <title>Dulce Momento — Pastelería</title>
+    <link rel="icon" href="assets/"logo.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body class="sparkle-bg">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Dulce Momento inicio">
+        <img src="assets/"logo.png" alt="Dulce Momento" />
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a class="active" href="index.html">Inicio</a>
+        <a href="menu.html">Menú</a>
+        <a href="sobre-nosotros.html">Sobre nosotros</a>
+        <a href="contacto.html">Contáctanos</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn-primary" href="contacto.html">Pedir ahora</a>
+        <button class="btn btn-cart" type="button" data-cart-btn aria-label="Carrito">
+          🛒
+          <span class="cart-badge" data-cart-count hidden>0</span>
+        </button>
+        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Abrir menú">
+          ☰
+        </button>
+      </div>
+    </header>
+
+    <div class="mobile-nav" data-mobile-nav>
+      <div class="mobile-nav-panel">
+        <a class="active" href="index.html">Inicio</a>
+        <a href="menu.html">Menú</a>
+        <a href="sobre-nosotros.html">Sobre nosotros</a>
+        <a href="contacto.html">Contáctanos</a>
+        <a class="btn btn-primary" href="contacto.html" style="margin-top: 0.5rem">Pedir ahora</a>
+      </div>
+    </div>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy reveal">
+          <div class="eyebrow">✦ pastelería artesanal · cute vibes</div>
+          <h1>Dulce Momento <span>hecho con magia</span></h1>
+          <p>
+            Tortas, cupcakes y café para celebrar lo bonito de cada día. Un rincón
+            dulce con sabor de verdad.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="menu.html">Ver menú</a>
+            <a class="btn btn-ghost" href="sobre-nosotros.html">Nuestra historia</a>
+          </div>
+        </div>
+        <div class="hero-visual reveal reveal-d2">
+          <div class="hero-orb">
+            <img src="assets/"product-cake-real.png" alt="Torta rosa artesanal Dulce Momento" />
+          </div>
+          <div class="float-chip a">♡ recién horneado</div>
+          <div class="float-chip b">★ 4.9 dulzura</div>
+        </div>
+      </section>
+
+      <svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0,30 C240,70 480,0 720,30 C960,60 1200,10 1440,40 L1440,70 L0,70 Z"></path>
+      </svg>
+
+      <section class="section section-pink" id="especialidades">
+        <div class="section-head">
+          <h2>Especialidades</h2>
+          <div class="heart-rule">♥</div>
+          <p>Elige tu antojo favorito</p>
+        </div>
+        <div class="cat-grid">
+          <a class="cat" href="menu.html?cat=tortas">
+            <div class="cat-img"><img src="assets/"product-cake-real.png" alt="" /></div>
+            <h3>Tortas</h3>
+            <p>Capas suaves y flores</p>
+          </a>
+          <a class="cat" href="menu.html?cat=cupcakes">
+            <div class="cat-img"><img src="assets/"product-cupcakes-real.png" alt="" /></div>
+            <h3>Cupcakes</h3>
+            <p>Sprinkles y sonrisas</p>
+          </a>
+          <a class="cat" href="menu.html?cat=postres">
+            <div class="cat-img"><img src="assets/"product-desserts-real.png" alt="" /></div>
+            <h3>Postres</h3>
+            <p>Macarons & más</p>
+          </a>
+          <a class="cat" href="menu.html?cat=bebidas">
+            <div class="cat-img"><img src="assets/"product-latte-real.png" alt="" /></div>
+            <h3>Bebidas</h3>
+            <p>Latte con corazoncito</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="section section-cream" id="favoritos">
+        <div class="section-head">
+          <h2>Favoritos de la semana</h2>
+          <div class="heart-rule">♥</div>
+          <p>Los más pedidos · listos para enamorar</p>
+        </div>
+        <div class="product-row">
+          <article class="product">
+            <div class="product-media">
+              <img src="assets/"product-cake-real.png" alt="Rose Cake" />
+            </div>
+            <div class="product-body">
+              <h3>Rose Cake</h3>
+              <div class="price-row">
+                <span class="price">$28.00</span>
+                <button
+                  class="btn btn-soft"
+                  type="button"
+                  data-add-cart
+                  data-id="rose-cake"
+                  data-name="Rose Cake"
+                  data-price="28"
+                >
+                  Añadir
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="product">
+            <div class="product-media">
+              <img src="assets/"product-cupcakes-real.png" alt="Cupcake Party" />
+            </div>
+            <div class="product-body">
+              <h3>Cupcake Party</h3>
+              <div class="price-row">
+                <span class="price">$4.50</span>
+                <button
+                  class="btn btn-soft"
+                  type="button"
+                  data-add-cart
+                  data-id="cupcake-party"
+                  data-name="Cupcake Party"
+                  data-price="4.5"
+                >
+                  Añadir
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="product">
+            <div class="product-media">
+              <img src="assets/"product-desserts-real.png" alt="Combo Dulce" />
+            </div>
+            <div class="product-body">
+              <h3>Combo Dulce</h3>
+              <div class="price-row">
+                <span class="price">$16.00</span>
+                <button
+                  class="btn btn-soft"
+                  type="button"
+                  data-add-cart
+                  data-id="combo-dulce"
+                  data-name="Combo Dulce"
+                  data-price="16"
+                >
+                  Añadir
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="product">
+            <div class="product-media">
+              <img src="assets/"product-latte-real.png" alt="Latte Corazón" />
+            </div>
+            <div class="product-body">
+              <h3>Latte Corazón</h3>
+              <div class="price-row">
+                <span class="price">$5.00</span>
+                <button
+                  class="btn btn-soft"
+                  type="button"
+                  data-add-cart
+                  data-id="latte-corazon"
+                  data-name="Latte Corazón"
+                  data-price="5"
+                >
+                  Añadir
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="story-band">
+        <img src="assets/"mascot-chef-anime.png" alt="Mascota chef Dulce Momento" />
+        <div>
+          <h2>¡Hola! Soy la chef de Dulce Momento</h2>
+          <p>
+            Horneo cada día con cariño y mucha mantequilla. ¿Lista para un momento
+            memorable con dulzura?
+          </p>
+          <a class="btn btn-soft" href="sobre-nosotros.html">Conócenos más</a>
+        </div>
+      </section>
+
+      <section class="section section-tight">
+        <div class="section-head compact">
+          <h2>Por qué nos eligen</h2>
+          <div class="heart-rule">♥</div>
+        </div>
+        <div class="values">
+          <div class="value">
+            <span class="emoji">🍓</span>
+            <h3>Ingredientes frescos</h3>
+            <p>Frutas y cremas del día</p>
+          </div>
+          <div class="value">
+            <span class="emoji">🎀</span>
+            <h3>Hecho a mano</h3>
+            <p>Cada detalle con amor</p>
+          </div>
+          <div class="value">
+            <span class="emoji">✨</span>
+            <h3>Pedidos cute</h3>
+            <p>Personalizamos tu celebración</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer footer-tight">
+      <div class="footer-grid">
+        <div>
+          <h3>Dulce Momento</h3>
+          <p>momentos memorables con dulzura</p>
+          <p>Lun–Sáb · 8:00–20:00</p>
+        </div>
+        <div>
+          <h4>Explorar</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="menu.html">Menú</a></li>
+            <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+            <li><a href="contacto.html">Contáctanos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Síguenos</h4>
+          <div class="socials">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="Facebook">FB</a>
+            <a href="#" aria-label="WhatsApp">WA</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© Dulce Momento</span>
+        <span>Hecho con dulzura</span>
+      </div>
+    </footer>
+
+    <script type="module">
+      import { boot } from "/src/main.js";
+      boot();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dulce Momento — Contáctanos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="sparkle-bg">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Dulce Momento inicio">
+        <img src="assets/logo.png" alt="Dulce Momento" />
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a href="index.html">Inicio</a>
+        <a href="index.html#menu">Menú</a>
+        <a href="sobre-nosotros.html">Sobre nosotros</a>
+        <a class="active" href="contacto.html">Contáctanos</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn-primary" href="contacto.html">Pedir ahora</a>
+        <button class="btn btn-cart" type="button" aria-label="Carrito">🛒</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <h1 class="reveal">Contáctanos</h1>
+        <p class="reveal reveal-d1">Cuéntanos tu dulce idea ♡</p>
+      </section>
+
+      <svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0,30 C240,70 480,0 720,30 C960,60 1200,10 1440,40 L1440,70 L0,70 Z"></path>
+      </svg>
+
+      <section class="section section-pink">
+        <div class="contact-grid">
+          <aside class="info-stack reveal">
+            <div>
+              <h2 style="font-family: var(--font-display); color: var(--burgundy); margin: 0 0 0.8rem">
+                Datos de contacto
+              </h2>
+              <p style="color: var(--muted); margin: 0 0 1rem">
+                Pedidos especiales, cotizaciones de tortas y reservas para eventos.
+              </p>
+            </div>
+            <div class="info-card">
+              <strong>📍 Dirección</strong>
+              Calle Ejemplo 123, Ciudad
+            </div>
+            <div class="info-card">
+              <strong>✉ Email</strong>
+              hola@dulcemomento.com
+            </div>
+            <div class="info-card">
+              <strong>☎ Teléfono</strong>
+              +00 000 000 0000
+            </div>
+            <div class="info-card">
+              <strong>🕒 Horario</strong>
+              Lun–Sáb · 8:00–20:00
+            </div>
+            <div class="socials" aria-label="Redes">
+              <a href="#">IG</a>
+              <a href="#">FB</a>
+              <a href="#">WA</a>
+            </div>
+            <img
+              src="assets/mascot-chef-anime.png"
+              alt=""
+              style="width: 180px; margin: 0.5rem auto 0; border-radius: 50%"
+            />
+          </aside>
+
+          <form class="form-panel reveal reveal-d2" action="#" method="post">
+            <h2>Envíanos un mensaje</h2>
+            <div class="form-row">
+              <div class="field">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" />
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="tu@email.com" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <label for="tel">Teléfono</label>
+                <input id="tel" name="tel" type="tel" placeholder="+00 ..." />
+              </div>
+              <div class="field">
+                <label for="asunto">Asunto</label>
+                <input id="asunto" name="asunto" type="text" placeholder="Torta de cumpleaños" />
+              </div>
+            </div>
+            <div class="field">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos qué necesitas..."></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Enviar con amor ✦</button>
+          </form>
+        </div>
+
+        <div class="map-block" role="img" aria-label="Mapa de ubicación">
+          <div style="text-align: center">
+            <div class="map-pin" style="margin: 0 auto 0.8rem"></div>
+            Mapa · Dulce Momento
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer footer-tight">
+      <div class="footer-grid">
+        <div>
+          <h3>Dulce Momento</h3>
+          <p>momentos memorables con dulzura</p>
+        </div>
+        <div>
+          <h4>Explorar</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+            <li><a href="contacto.html">Contáctanos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Síguenos</h4>
+          <div class="socials">
+            <a href="#">IG</a>
+            <a href="#">FB</a>
+            <a href="#">WA</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© Dulce Momento · Mockup cute anime</span>
+        <span>Contáctanos</span>
+      </div>
+    </footer>
+    <script>
+      const params = new URLSearchParams(location.search);
+      const asunto = params.get("asunto");
+      if (asunto) {
+        const input = document.getElementById("asunto");
+        const mensaje = document.getElementById("mensaje");
+        if (input) input.value = asunto;
+        if (mensaje) mensaje.placeholder = "Cuéntanos qué dulce te gustaría que agregáramos...";
+      }
+    </script>
+  </body>
+</html>
